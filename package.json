@@ -1,0 +1,16 @@
+{
+	"name"    : "x-cookie",
+	"version" : "1.0.0",
+	"dependencies" : {
+		"x-common" : "1.x.x"
+	},
+	"devDependencies":{
+		"x-publish": "1.x.x",
+		"vows"     : "latest"
+	},
+	"main" : "cookie.js",
+	"scripts": {
+		"prepublish" : "./node_modules/x-publish/scripts/prepublish.sh",
+		"test"       : "vows ./test/*.test.js"
+	}
+}
